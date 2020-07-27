@@ -1,4 +1,4 @@
-### Hi there, my name is Sanat Bhandari 👋
+### My website for my portfolio and collaboration opportunities
 
 <!--
 **SanatBhandari/SanatBhandari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
