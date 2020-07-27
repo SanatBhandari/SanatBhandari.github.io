@@ -2544,8 +2544,7 @@ input, select, textarea {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #a1542c;
 		background-image: url("../../images/background-3.jpg");
-		background-position: auto, auto, top left, top center;
-		/* background-position: bottom left, bottom right, top left, top center; */
+		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: cover;
 		color: #fff;
