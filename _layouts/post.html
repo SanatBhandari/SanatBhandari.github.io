@@ -3,7 +3,17 @@ layout: default
 type: blog
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<article id='main'>
+    <header class='container'>
+        <h1>{{ page.title }}</h1>
+    </header>
 
-{{ content }}
+    <section class='wrapper style4 container'>
+        <div class='row gtr-150'>
+            <div class="content">
+                <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+                {{ content }}
+            </div>
+        </div>
+    </section>
+</article>
