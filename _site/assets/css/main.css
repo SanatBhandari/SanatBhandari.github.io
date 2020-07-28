@@ -35,6 +35,20 @@ body {
 
 ol, ul {
 	list-style: none;
+	list-style-type: none;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #1c2021;
+    margin: 1em 0;
+    padding: 0;
+}
+
+a:hover {
+	opacity: 0.3; 
 }
 
 blockquote, q {

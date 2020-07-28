@@ -11,18 +11,28 @@ title: Blog
 
     <section class='wrapper style4 container'>
         <div class='row gtr-150'>
-            <div class='col-8 col-12-narrower'>
-                <div class="content">
-                    <ul>
-                        {% for post in site.posts %}
-                        <li>
-                            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                            {{ post.excerpt }}
-                        </li><br/>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+            <ul style="list-style-type: none;">
+                {% for post in site.posts %}
+                <li>
+                    <div class="row">
+                        <div class='col-8 col-12-normal'>
+                            <div class="content">
+                                <section>
+                                    <!-- Image to be rendered here -->
+                                    <img src="../images/pic01.jpg" />
+                                </section>
+                            </div>
+                        </div>
+    
+                        <div class="col-4 col-12-normal">
+                                <h2><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
+                                {{ post.excerpt }}
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
         </div>
     </section>
 
