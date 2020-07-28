@@ -30,9 +30,13 @@ twitter_username: jekyllrb
 github_username:  SanatBhandari
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+
+collections:
+  my_collection:
+    output: true
+    permalink: /:collection/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
