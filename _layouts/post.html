@@ -4,19 +4,20 @@ type: post
 ---
 
 <article id='main'>
-    <header class='container'>
-        <h1>{{ page.title }}</h1>
-    </header>
 
     <section class='wrapper style4 container'>
-        <div class='row gtr-150'>
-            <div class="content">
+        <header class='container'>
+            <h1>{{ page.title }}</h1>
+        </header>
+
+        <div class="content">
+            <section>
                 <div class="col-12 col-12-narrower">
-                    <img src="{{ page.thumbnail }}" />
+                    <img src="{{ page.thumbnail }}" alt="" />
                 </div>
                 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
                 {{ content }}
-            </div>
+            </section>
         </div>
     </section>
 </article>

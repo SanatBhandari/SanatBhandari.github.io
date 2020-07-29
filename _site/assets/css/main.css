@@ -2559,6 +2559,8 @@ footer {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #a1542c;
 		background-image: url("../../images/background-3.jpg");
+		width: 100%;
+		height: auto;
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: cover;
