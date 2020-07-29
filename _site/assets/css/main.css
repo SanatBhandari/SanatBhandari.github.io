@@ -42,7 +42,8 @@ hr {
     display: block;
     height: 2px;
     border: 0;
-    border-top: 1px solid #1c2021;
+	border-top: 1px solid #1c2021;
+	opacity: 0.2;
     margin: 1em 0;
     padding: 0;
 }
@@ -182,12 +183,6 @@ footer {
 		font-size: 0.8em;
 		position: relative;
 		top: -0.5em;
-	}
-
-	hr {
-		border-top: solid 1px rgba(124, 128, 129, 0.2);
-		border: 0;
-		margin-bottom: 1.5em;
 	}
 
 	blockquote {
