@@ -3,6 +3,8 @@ title: Second Post
 permalink: /dummy-post-2/
 layout: post
 type: post
+thumbnail: "../images/pic02.jpg"
+author: Sanat Bhandari
 ---
 
 # Dummy Post 2

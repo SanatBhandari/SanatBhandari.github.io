@@ -11,6 +11,9 @@ type: post
     <section class='wrapper style4 container'>
         <div class='row gtr-150'>
             <div class="content">
+                <div class="col-12 col-12-narrower">
+                    <img src="{{ page.thumbnail }}" />
+                </div>
                 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
                 {{ content }}
             </div>
