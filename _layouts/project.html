@@ -6,16 +6,33 @@ type: blog
 <article id='main'>
 
     <header class="container">
-        <h2>My Projects</h2>
+        <h2>My Work</h2>
     </header>
 
     <section class='wrapper style4 container'>
+        {% for post in site.posts %}
         <div class='row gtr-150'>
-            <div class='col-8 col-12-narrower'>
+            <div class='col-4 col-12-normal'>
                 <div class="content">
-                    
+                    <!-- Image to be rendered here -->
+                    {% if post.thumbnail %}
+                    <img src="{{ post.thumbnail }}" style="height: 300px; width: 300px;"/>
+                    {% else %}
+                    <img src="images/pic01.jpg" style="height: 300px; width: 300px;"/>
+                    {% endif %}
                 </div>
             </div>
+
+            <div class="col-8 col-12-narrowed">
+                <div class="content">
+                    <h2><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
+                    {{ post.excerpt }}
+                </div>
+            </div>
+        </div>
+        <hr />
+        {% endfor %}
+
         </div>
     </section>
 
