@@ -48,7 +48,7 @@ hr {
     padding: 0;
 }
 
-a:hover {
+.content a:hover {
 	opacity: 0.3; 
 }
 
