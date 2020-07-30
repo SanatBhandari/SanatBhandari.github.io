@@ -12,7 +12,7 @@ title: Blog
     <section class='wrapper style4 container'>
         {% for post in site.posts %}
         <div class='row gtr-150'>
-            <div class='col-3 col-12-normal'>
+            <div class='col-4 col-12-normal'>
                 <div class="content">
                     <!-- Image to be rendered here -->
                     {% if post.thumbnail %}
@@ -23,7 +23,7 @@ title: Blog
                 </div>
             </div>
 
-            <div class="col-9 col-12-narrowed">
+            <div class="col-8 col-12-narrowed">
                 <div class="content">
                     <h2><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
                     {{ post.excerpt }}

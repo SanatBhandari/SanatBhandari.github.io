@@ -14,7 +14,7 @@ type: post
             <section>
                 <div class="col-12 col-12-narrower">
                     {% if post.featured-image %}{% include post-featured-image.html image=post.featured-image alt=post.featured-image-alt %}{% endif %}
-                    <img src="{{ page.thumbnail }}" alt="" />
+                    <img src="{{ page.thumbnail }}" alt="{{ page.title }}" width="100%"/>
                 </div>
                 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
                 {{ content }}
