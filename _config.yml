@@ -32,6 +32,10 @@ github_username:  SanatBhandari
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-assets
+  - another-jekyll-plugin
 
 collections:
   my_collection:
