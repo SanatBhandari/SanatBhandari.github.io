@@ -1,6 +1,6 @@
 ### My website for my portfolio and collaboration opportunities
 
-The link to my website is sanatbhandari.github.io
+My portfolio is available on [here](sanatbhandari.netlify.app)
 <!--
 **SanatBhandari/SanatBhandari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
