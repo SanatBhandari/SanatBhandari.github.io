@@ -9,9 +9,11 @@ title: Blog
     </header>
 
     {% for post in site.posts %}
+    {% assign author = site.data.authors[post.author] %}
     <article class='wrapper-custom style4 container'>
         <div class="content" style="float: inline-end;">
-            <h2 style="margin-bottom: 0em; text-transform: none;"><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
+            <h2 style="margin-bottom: 0em; text-transform: none;"><a
+                    href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
             <p style="text-transform: capitalize; opacity: 0.5; font-size: small;">Posted
                 {% assign day = post.date | date: "%-d"  %}
                 {% case day %}
@@ -21,6 +23,15 @@ title: Blog
                 {% else %}{{ day }}th
                 {% endcase %}
                 {{ post.date | date: " %B, %Y" }}</p>
+            {% if author.name %}
+            <div class="author">
+                <div class="author-avatar" {% if author.image %}style="background-image: url({{author.image}});"
+                    {% endif %}></div>
+                <div class="author-details"><strong>{{ author.name }}</strong></div>
+            </div>
+            {% else %}
+            <p><span>Author name undetected</span></p>
+            {% endif %}
             <h2 style="text-transform: none;">{{ post.excerpt }}</h2>
         </div>
     </article>

@@ -4,7 +4,7 @@ permalink: /dummy-post-2/
 layout: post
 type: post
 thumbnail: "../images/pic02.jpg"
-author: Sanat Bhandari
+author: sanat_bhandari
 ---
 
 # Dummy Post 2
