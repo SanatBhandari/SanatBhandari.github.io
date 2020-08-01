@@ -1,9 +1,9 @@
 ---
 title: Why React is the best framework out there?
-permalink: /dummy-post/
+permalink: /why-react-is-the-best
 layout: post
 type: post
-thumbnail: "../images/pic01.jpg"
+thumbnail: "../images/react-post.png"
 author: Sanat Bhandari
 ---
 

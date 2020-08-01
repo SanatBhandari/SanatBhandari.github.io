@@ -4,36 +4,25 @@ title: Blog
 ---
 
 <article id='main'>
-
     <header class="container">
-        <h2>Latest Posts</h2>
+        <h2 style="font-weight: 600;"><strong>Blog Posts</strong></h2>
     </header>
 
-    <section class='wrapper style4 container'>
-        {% for post in site.posts %}
-        <div class='row gtr-150'>
-            <div class='col-4 col-12-normal'>
-                <div class="content">
-                    <!-- Image to be rendered here -->
-                    {% if post.thumbnail %}
-                    <img src="{{ post.thumbnail }}" style="height: 300px; width: 300px;"/>
-                    {% else %}
-                    <img src="images/pic01.jpg" style="height: 300px; width: 300px;"/>
-                    {% endif %}
-                </div>
-            </div>
-
-            <div class="col-8 col-12-narrowed">
-                <div class="content">
-                    <h2><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
-                    {{ post.excerpt }}
-                </div>
-            </div>
+    {% for post in site.posts %}
+    <article class='wrapper-custom style4 container'>
+        <div class="content" style="align-content: center;">
+            <h2 style="margin-bottom: 0em;"><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
+            <p style="text-transform: capitalize; opacity: 0.5; font-size: small;">Posted
+                {% assign day = post.date | date: "%-d"  %}
+                {% case day %}
+                {% when '1' or '21' or '31' %}{{ day }}st
+                {% when '2' or '22' %}{{ day }}nd
+                {% when '3' or '23' %}{{ day }}rd
+                {% else %}{{ day }}th
+                {% endcase %}
+                {{ post.date | date: " %B, %Y" }}</p>
+            <p style="font-size: medium;">{{ post.excerpt }}</p>
         </div>
-        <hr />
-        {% endfor %}
-
-        </div>
-    </section>
-
+    </article>
+    {% endfor %}
 </article>

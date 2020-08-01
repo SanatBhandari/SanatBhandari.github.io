@@ -5,19 +5,37 @@ type: post
 
 <article id='main'>
     <section class='wrapper style4 container'>
-        <header style="font-size: large;">
-            {{ page.title }}
-        </header>
 
         <div class="content">
+            <header>
+                <h2><strong>{{ page.title }}</strong></h2>
+            </header>
             <section>
                 <div class="col-12 col-12-narrower">
                     {% if post.featured-image %}{% include post-featured-image.html image=post.featured-image alt=post.featured-image-alt %}{% endif %}
-                    <img src="{{ page.thumbnail }}" alt="{{ page.title }}" width="100%"/>
+                    <img src="{{ page.thumbnail }}" alt="{{ page.title }}" height="600px" width="100%" />
                 </div>
                 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
                 {{ content }}
             </section>
+
+            <!-- <div class="row">
+                <div class="col-6 col-12-narrower">
+                    <section>
+                        <ul class="buttons">
+                            <li><a href="#" class="button small">Previous Post</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="col-6 col-12-narrower">
+                    <section>
+                        <ul class="buttons">
+                            <li><a href="#" class="button small">Next Post</li>
+                        </ul>
+                    </section>
+                </div>
+            </div> -->
         </div>
     </section>
 </article>
