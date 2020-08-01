@@ -3405,3 +3405,12 @@ footer {
 .clearfix{
 	clear: both;
 }
+
+.last-post {
+	pointer-events:none; 
+	opacity: 0.2;
+}
+
+.align-div-right {
+	float: right;
+}

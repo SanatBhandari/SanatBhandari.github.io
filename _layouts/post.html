@@ -19,23 +19,29 @@ type: post
                 {{ content }}
             </section>
 
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-6 col-12-narrower">
                     <section>
-                        <ul class="buttons">
-                            <li><a href="#" class="button small">Previous Post</a></li>
-                        </ul>
+                        {% if page.previous.url %}
+                            <a href="{{ page.previous.url }}" class="button small">Previous Post</a>
+                        {% else %}
+                            <button class="button small last-post" disabled>Previous Post</button>
+                        {% endif %}
                     </section>
                 </div>
 
                 <div class="col-6 col-12-narrower">
                     <section>
-                        <ul class="buttons">
-                            <li><a href="#" class="button small">Next Post</li>
-                        </ul>
+                        {% if page.next.url %}
+                            <a href="{{ page.next.url }}" class="button small align-div-right">Next Post</a>
+                        {% else %}
+                        <div style="float: right;">
+                            <button class="button small last-post" disabled>Next Post</button>
+                        </div>                 
+                        {% endif %}
                     </section>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 </article>

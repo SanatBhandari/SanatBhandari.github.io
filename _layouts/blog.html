@@ -10,8 +10,8 @@ title: Blog
 
     {% for post in site.posts %}
     <article class='wrapper-custom style4 container'>
-        <div class="content" style="align-content: center;">
-            <h2 style="margin-bottom: 0em;"><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
+        <div class="content" style="float: inline-end;">
+            <h2 style="margin-bottom: 0em; text-transform: none;"><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h2>
             <p style="text-transform: capitalize; opacity: 0.5; font-size: small;">Posted
                 {% assign day = post.date | date: "%-d"  %}
                 {% case day %}
@@ -21,7 +21,7 @@ title: Blog
                 {% else %}{{ day }}th
                 {% endcase %}
                 {{ post.date | date: " %B, %Y" }}</p>
-            <p style="font-size: medium;">{{ post.excerpt }}</p>
+            <h2 style="text-transform: none;">{{ post.excerpt }}</h2>
         </div>
     </article>
     {% endfor %}
