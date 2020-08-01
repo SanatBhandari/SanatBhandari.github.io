@@ -3,6 +3,7 @@ layout: default
 type: post
 ---
 
+{% assign author = site.data.authors[page.author] %}
 <article id='main'>
     <section class='wrapper style4 container'>
 
@@ -10,7 +11,7 @@ type: post
         <div class="content">
             <header>
                 <h2 style="margin-bottom: 0em;"><strong>{{ page.title }}</strong></h2>
-                <p style="text-transform: capitalize; opacity: 0.5; font-size: small;">Posted
+                <p style="text-transform: capitalize; opacity: 0.5; font-size: small; margin: 0 0 1em 0">Posted
                     {% assign day = page.date | date: "%-d"  %}
                     {% case day %}
                     {% when '1' or '21' or '31' %}{{ day }}st
@@ -19,6 +20,15 @@ type: post
                     {% else %}{{ day }}th
                     {% endcase %}
                     {{ page.date | date: " %B, %Y" }}</p>
+                {% if author.name %}
+                <div class="author">
+                    <div class="author-avatar" {% if author.image %}style="background-image: url({{author.image}});"
+                        {% endif %}></div>
+                    <div class="author-details"><strong>{{ author.name }}</strong></div>
+                </div>
+                {% else %}
+                <p><span>Author name undetected</span></p>
+                {% endif %}
             </header>
             <section>
                 <div class="col-12 col-12-narrower">
@@ -33,9 +43,9 @@ type: post
                 <div class="col-6 col-12-narrower">
                     <section>
                         {% if page.previous.url %}
-                            <a href="{{ page.previous.url }}" class="button small">Previous Post</a>
+                        <a href="{{ page.previous.url }}" class="button small">Previous Post</a>
                         {% else %}
-                            <button class="button small last-post" disabled>Previous Post</button>
+                        <button class="button small last-post" disabled>Previous Post</button>
                         {% endif %}
                     </section>
                 </div>
@@ -43,11 +53,11 @@ type: post
                 <div class="col-6 col-12-narrower">
                     <section>
                         {% if page.next.url %}
-                            <a href="{{ page.next.url }}" class="button small align-div-right">Next Post</a>
+                        <a href="{{ page.next.url }}" class="button small align-div-right">Next Post</a>
                         {% else %}
                         <div style="float: right;">
                             <button class="button small last-post" disabled>Next Post</button>
-                        </div>                 
+                        </div>
                         {% endif %}
                     </section>
                 </div>

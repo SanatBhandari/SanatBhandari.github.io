@@ -3414,3 +3414,28 @@ footer {
 .align-div-right {
 	float: right;
 }
+
+.img-custom {
+	height: 4em;
+	width: 4em;
+}
+
+.author {
+	display: flex;
+	margin-bottom: 2em;
+}
+
+.author-avatar {
+	background-size: contain;
+    background-color: #c1c3c6;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+
+.author-details {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1em;
+	justify-content: center;
+}
