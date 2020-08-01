@@ -1,6 +1,6 @@
 ### My website for my portfolio and collaboration opportunities
 
-My portfolio is available on [here](sanatbhandari.netlify.app)
+My portfolio is available on [here](https://sanatbhandari.netlify.app/)
 <!--
 **SanatBhandari/SanatBhandari** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
