@@ -3389,6 +3389,7 @@ footer {
 
 	}
 
+/* Custom CSS classes built on top of the template (in addition to the some changes earlier in the script) */
 .thumbnail {
 	height: 400px;
 	width: 200px;
