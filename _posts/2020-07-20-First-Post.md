@@ -13,6 +13,4 @@ React is a great framework to be used for creating web pages. The componentizati
 
 $$x^2 + y^2 = 25$$
 
-What is the solution to this? Well, you guessed it right. It is 
-
-$$x=\plusmn 5, y= \plusmn 5$$
+What is the solution to this? Well, you guessed it right. It is  $$x=\plusmn 5$$ and $$y= \plusmn 5$$
